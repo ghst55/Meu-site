@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutavo Teixeira - Amor e Carinho</title>
+    <style>
+        /* Corpo da página */
+        body {
+            background-color: #fbe6f5;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff66b2;
+            margin-top: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #ff3399;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo dos corações */
+        .heart {
+            font-size: 1.5em;
+            color: #ff3399;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        /* Texto e mensagens */
+        .message {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #444;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            color: #ff66b2;
+            font-weight: bold;
+        }
+
+        /* Efeitos de fundo */
+        .hearts-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .heart-animation {
+            position: absolute;
+            font-size: 40px;
+            animation: float 4s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100vh);
+            }
+        }
+
+        /* Rodapé */
+        .footer {
+            margin-top: 50px;
+            font-size: 1.1em;
+            color: #ff66b2;
+            font-weight: bold;
+        }
+
+        /* Estilo do formulário de pergunta */
+        .question-container {
+            margin-top: 30px;
+            font-size: 1.3em;
+            color: #444;
+        }
+
+        .question-container span {
+            font-weight: bold;
+            color: #ff66b2;
+        }
+
+        .button {
+            font-size: 1.2em;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff3399;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Relatório do Encontro Especial <span class="heart">💖</span></h1>
+
+    <div class="container">
+        <h2>Resumo do Nosso Momento</h2>
+        <p class="message">
+            Olá Bruna,
+            Quero agardecer por ter passado esse tempo comigo. A noite foi incrível e me fez sentir feliz. Espero que
+            Possamos repetir novamente.
+            Se em algum momento eu causei desconforto ou em algum momento me faltou comunicação, por favor,me perdoe.
+            Estou aprendendo a me abrir e não estou acostumado a sair assim.🥰🥰 . <span class="heart">💗</span><br>
+            Você é uma pessoa incrível. E queria que a gente podesse explorar esses sentimento!
+            Obrigado por ser você. Estou ansioso para o próximo Encontro.
+
+        </p>
+
+        <h2>Minhas Impressões</h2>
+        <p class="message">
+            Cada sorriso seu, cada olhar e cada palavra me deixaram encantado. <span class="highlight">Eu espero de
+                verdade que tenha se divertido tanto quanto eu!</span><br>
+            Você me fez sentir algo que eu nunca havia experimentado. A conexão que senti foi tão forte e verdadeira.
+            Você tem um jeito de tornar tudo mais bonito. <span class="heart">💝</span>
+        </p>
+
+        <h2>Reflexões do Coração</h2>
+        <p class="message">
+            Eu me peguei pensando em como foi bom estar ao seu lado, e em como tudo pareceu tão fácil e natural. <span
+                class="heart">❤️</span><br>
+            A cada momento, fui percebendo o quanto você é uma pessoa especial, cheia de luz e amor. Eu adoraria
+            continuar esses momentos, explorar ainda mais nosso vínculo e ver onde isso pode nos levar. 🌟
+        </p>
+
+        <p class="footer">Com carinho e admiração, <strong>Seu admirador secreto</strong>.</p>
+
+        <!-- Pergunta ao final -->
+        <div class="question-container">
+            <p><span>Gostou do nosso encontro?</span></p>
+            <button class="button" onclick="alert('Fico feliz que você tenha gostado! 😊')">Sim! 💖</button>
+            <button class="button"
+                onclick="alert('Ah, tudo bem! Fico feliz em ter tido a oportunidade de estar com você!')">Não
+                😔</button>
+        </div>
+    </div>
+
+    <!-- Animação de corações no fundo -->
+    <div class="hearts-background">
+        <div class="heart-animation" style="left: 10%; animation-delay: 0s;">💖</div>
+        <div class="heart-animation" style="left: 20%; animation-delay: 1s;">💝</div>
+        <div class="heart-animation" style="left: 30%; animation-delay: 2s;">❤️</div>
+        <div class="heart-animation" style="left: 40%; animation-delay: 3s;">💗</div>
+        <div class="heart-animation" style="left: 50%; animation-delay: 4s;">💖</div>
+        <div class="heart-animation" style="left: 60%; animation-delay: 5s;">💝</div>
+        <div class="heart-animation" style="left: 70%; animation-delay: 6s;">❤️</div>
+        <div class="heart-animation" style="left: 80%; animation-delay: 7s;">💗</div>
+    </div>
+
+</body>
+
+</html>
